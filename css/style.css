@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: ghostwhite;
+    background: #3E9B8F;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 80vh;
+    align-items: center;
+}
+
+header #slide {
+    border-radius: 20px;
+    object-fit: contain;
+    height: 60vh;
+    transition: ease-in-out 1000ms;
+}
+
+header #slide:hover {
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+header div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header div button {
+    margin: 1vw;
+    height: 20vh;
+    width: 20vh;
+    padding: 2vw;
+    border-radius: 70px;
+    background-color: rgba( 255, 255, 255, 0.025);
+    border: none;
+    display: flex;
+    justify-content: space-around;
+    background-image: url("../img/arrow.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#left-button {
+    transform: scaleX(-1);
+}
+
+header div button:hover {
+    background-color: rgba( 255, 255, 255, 0.1);
+}
+
+nav {
+    margin-top: -5vh;
+    background: #327C6F;
+    height: 10vh;
+    width: 100vw;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    border-radius: 20px;
+    transition: ease-in-out 1000ms;
+}
+
+nav a {
+    text-decoration: none;
+    color: ghostwhite;
+    padding: 1vh;
+    width: 5vw;
+    transition: ease-in-out 1000ms;
+}
+
+nav a:hover {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+nav span {
+    display: none;
+    background: #262526;
+    padding: 2px;
+    position: relative;
+}
+
+nav a:hover span{
+    display: flex;
+}
+
+nav #filler {
+    flex: 5;
+    text-align: center;
+}
+
+nav img {
+    object-fit: contain;
+    height: 8vh;
+}
+
+main {
+    padding: 6vw;
+}
+
+main div {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+main div div {
+    background: #327C6F;
+    flex-direction: column;
+    border-radius: 2vh;
+    padding: 3vw;
+    margin: 1vw;
+    transition: ease-in-out 1000ms;
+}
+
+main div div:hover {
+    background: #2C685D;
+}
+
+main div .text {
+    flex: 2;
+}
+
+main div .image {
+    background: #65B7A7;
+    color: #262526;
+    font-size: 1.5em;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    transition: ease-in-out 1000ms;
+}
+
+main div .image:hover {
+    flex: 1.5;
+}
+
+main div .image img {
+    border-radius: 20px;
+    object-fit: cover;
+    height: 20vh;
+    width: 20vh;
+    transition: ease-in-out 1000ms;
+}
+
+main div .image p {
+    display: flex;
+}
+
+main div .image:hover img {
+    height: 50vh;
+    width: auto;
+}
+
+main div .image:hover p {
+    display: none;
+}
+
