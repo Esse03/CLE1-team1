@@ -29,7 +29,7 @@ function createSlideShow() {
     rightButton.appendChild(buttonIcon);
 
     slideShow.appendChild(leftButton);
-    //slideShow.appendChild(slide);
+    slideShow.appendChild(slide);
     slideShow.appendChild(rightButton);
 
     console.log(slideShow)
