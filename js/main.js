@@ -1,3 +1,4 @@
+//edit
 window.addEventListener('load', init);
 
 const imageList = ['cle1stappenteller;1', 'cle1stappenteller;4', 'cle1stappenteller;3', 'cle1stappenteller;6', 'cle1stappenteller;8'];
